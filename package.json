@@ -1,0 +1,26 @@
+{
+  "name": "node-cli",
+  "version": "1.0.0",
+  "description": "node.js command line module scaffold",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "node-cli": "./bin/exec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aprilorange/node-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aprilorange/node-cli/issues"
+  },
+  "homepage": "https://github.com/aprilorange/node-cli#readme",
+  "dependencies": {
+    "minimist": "^1.1.2"
+  }
+}
