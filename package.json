@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/aprilorange/nwjs#readme",
   "dependencies": {
+    "colorful": "^2.1.0",
     "minimist": "^1.1.2"
   }
 }

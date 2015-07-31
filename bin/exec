@@ -1,4 +1,6 @@
 #!/usr/bin/env node
 
+require('colorful').toxic()
+
 var argv = require('minimist')(process.argv.slice(2), { '--': true })
 require('..')(argv)
