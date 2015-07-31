@@ -1,25 +1,25 @@
 {
-  "name": "node-cli",
-  "version": "1.0.0",
-  "description": "node.js command line module scaffold",
+  "name": "nwjs",
+  "version": "0.0.0",
+  "description": "Install nw.js prebuilts using npm",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "preferGlobal": true,
   "bin": {
-    "node-cli": "./bin/exec"
+    "nwjs": "./bin/exec"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aprilorange/node-cli.git"
+    "url": "git+https://github.com/aprilorange/nwjs.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aprilorange/node-cli/issues"
+    "url": "https://github.com/aprilorange/nwjs/issues"
   },
-  "homepage": "https://github.com/aprilorange/node-cli#readme",
+  "homepage": "https://github.com/aprilorange/nwjs#readme",
   "dependencies": {
     "minimist": "^1.1.2"
   }

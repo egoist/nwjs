@@ -1,9 +1,7 @@
-# node-cli
+# nw.js
 
-node.js command line module scaffold
-
-Writing command-line tool is super easy, especially when using this scaffold.
+Inspired by [electron-prebuilt](https://github.com/mafintosh/electron-prebuilt)
 
 ## License
 
-[MIT](/LICENSE).
+MIT.
