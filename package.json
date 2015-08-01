@@ -1,6 +1,6 @@
 {
   "name": "nwjs",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "description": "Install nw.js prebuilts using npm",
   "main": "index.js",
   "scripts": {
