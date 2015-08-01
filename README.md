@@ -4,10 +4,12 @@ Inspired by [electron-prebuilt](https://github.com/mafintosh/electron-prebuilt)
 
 You can use `nwjs` as a nw.js version manager, and do things like `nwjs /your/app/path`
 
+![preview](http://ww4.sinaimg.cn/large/a15b4afegw1eun3wckiwwg20v70i4x5c.gif)
+
 # Install
 
 ```bash
-npm i -g nwjs --verbose
+npm i -g nwjs
 ```
 
 # Usage
