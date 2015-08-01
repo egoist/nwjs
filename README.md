@@ -2,6 +2,8 @@
 
 Inspired by [electron-prebuilt](https://github.com/mafintosh/electron-prebuilt)
 
+You can use `nwjs` as a nw.js version manager, and do things like `nwjs /your/app/path`
+
 # Install
 
 ```bash
