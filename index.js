@@ -48,7 +48,7 @@ module.exports = function(argv) {
     function mainAction(err, files) {
       if(err) return console.log(err)
       var nwjs = path.join(homePath(), '.nwjs/' + version + '/nw.exe')
-      spawn(nwjs + ' ' + appPath)
+      spawn(nwjs, [appPath])
         .then(function() {
           var info = 'Stopped running app ' + appPath + ' in nw.js ' + version
           console.log(info.red)
