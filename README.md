@@ -28,6 +28,8 @@ nwjs
 nwjs ./app
 ```
 
+_Have to note that I have only tested it on win32 platform, use at your own risk and PRs are welcome._
+
 ## License
 
 MIT.
