@@ -1,6 +1,6 @@
 {
   "name": "nwjs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Install nw.js prebuilts using npm",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,13 @@
   },
   "homepage": "https://github.com/aprilorange/nwjs#readme",
   "dependencies": {
+    "child-process-promise": "^1.1.0",
     "colorful": "^2.1.0",
-    "minimist": "^1.1.2"
+    "download": "^4.2.0",
+    "download-status": "^2.2.1",
+    "home-path": "^1.0.0",
+    "minimist": "^1.1.2",
+    "mkdirp": "^0.5.1",
+    "path-exists": "^1.0.0"
   }
 }
