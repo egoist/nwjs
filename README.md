@@ -21,6 +21,7 @@ nwjs use 0.12.3 or nwjs use 0.13.0-alpha2
 # and so on...
 
 # run app
+# suppose the the app directory contains 'package.json' and the entry html file
 nwjs
 nwjs ./app
 ```
