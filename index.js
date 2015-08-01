@@ -9,14 +9,15 @@ var version = config.useVersion
 
 // get platform due to nw.js's bad naming style
 var platform = os.platform()
+var system
 if(platform.substring(0, 5) == 'linux') {
-  platform = 'linux'
+  system = 'linux'
 } else if (platform.substring(0, 5) == 'win32') {
-  platform = 'win'
+  system = 'win'
 } else if (platform.substring(0, 6) == 'darwin') {
-  platform = 'osx'
+  system = 'osx'
 }
-platform = platform  + '-' + os.arch()
+platform = system  + '-' + os.arch()
 
 module.exports = function(argv) {
   // usage: nwjs or nwjs . or nwjs C:\Users\sox\Dropbox\dev\app
@@ -47,7 +48,8 @@ module.exports = function(argv) {
 
     function mainAction(err, files) {
       if(err) return console.log(err)
-      var nwjs = path.join(homePath(), '.nwjs/' + version + '/nw.exe')
+      var exe = system == 'osx' ? '/nwjs.app/Contents/Resources/app.nw' : '/nw'
+      var nwjs = path.join(homePath(), '.nwjs/' + version + exe)
       spawn(nwjs, [appPath])
         .then(function() {
           var info = 'Stopped running app ' + appPath + ' in nw.js ' + version
