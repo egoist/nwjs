@@ -13,7 +13,8 @@ npm i -g nwjs --verbose
 nwjs info
 
 # install some version of nw.js
-nwjs 0.12.3 or nwjs 0.13.0-alpha2
+nwjs use 0.12.3 or nwjs use 0.13.0-alpha2
+# and so on...
 
 # run app
 nwjs
