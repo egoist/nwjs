@@ -1,10 +1,12 @@
-# nw.js
+# nwjs
 
 Inspired by [electron-prebuilt](https://github.com/mafintosh/electron-prebuilt)
 
-# install
+# Install
 
+```bash
 npm i -g nwjs --verbose
+```
 
 # Usage
 
