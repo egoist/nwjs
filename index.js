@@ -25,10 +25,9 @@ module.exports = function(argv) {
     platform: platform,
     version: version
   }
-
-  switch (argv._[0]) {
+  switch (argv[0]) {
     case 'use':
-      opts.version = argv._[1] || version
+      opts.version = argv[1] || version
       require('./lib/install')(opts, config)
       break
     case 'info':
@@ -40,22 +39,40 @@ module.exports = function(argv) {
   }
 
   function prebuilt() {
-    var appPath = argv._[0] ? argv._[0] : '.'
-    console.log('Running nwjs prebuilts in '.cyan + appPath.cyan)
-
-    download(opts, mainAction)
-
-
-    function mainAction(err, files) {
+    var nwjsArgs
+    var infoStart, infoStop
+    
+    if (argv.length){
+      nwjsArgs = argv
+      infoStart = 'Running nwjs prebuilts with arguments: "' + nwjsArgs.join(' ') + '"'
+      infoStop = 'Stopped running app with arguments "' + nwjsArgs.join(' ') + '" in nw.js ' + version
+    } else {
+      nwjsArgs = ['.']
+      infoStart = 'Running nwjs prebuilts in .'
+      infoStop = 'Stopped running app . in nw.js ' + version
+    }
+    
+    download(opts, function (err, files) {
+      console.log(infoStart.cyan)
+      console.log("====================".green)
       if(err) return console.log(err)
       var exe = system == 'osx' ? '/nwjs.app/Contents/Resources/app.nw' : '/nw'
       var nwjs = path.join(homePath(), '.nwjs/' + version + exe)
-      spawn(nwjs, [appPath])
-        .then(function() {
-          var info = 'Stopped running app ' + appPath + ' in nw.js ' + version
-          console.log(info.red)
+      spawn(nwjs, nwjsArgs)
+        // redirect nw.js stdout
+        .progress(function (childProcess) {
+          childProcess.stdout.on('data', function (data) {
+            process.stdout.write(data.toString())
+          })
+          childProcess.stderr.on('data', function (data) {
+            process.stderr.write(data.toString())
+          })
         })
-    }
+        .then(function() {
+          console.log(infoStop.red)
+          console.log("====================".green)
+        })
+    });
 
   }
 }
