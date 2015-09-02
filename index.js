@@ -63,7 +63,7 @@ module.exports = function (argv) {
       if (err)
         return console.log(err);
         
-      var exe = system == 'osx' ? '/nwjs.app/Contents/Resources/app.nw' : '/nw';
+      var exe = system == 'osx' ? '/nwjs.app/Contents/MacOS/nwjs' : '/nw';
       var nwjs = path.join(homePath(), '.nwjs/' + version + exe);
       
       spawn(nwjs, nwjsArgs)
