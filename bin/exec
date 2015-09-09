@@ -2,3 +2,4 @@
 
 require('colorful').toxic();
 require('..')(process.argv.slice(2));
+
