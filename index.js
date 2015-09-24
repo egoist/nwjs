@@ -1,7 +1,7 @@
 var fs = require('fs');
 var os = require('os');
 var path = require('path');
-var homePath = require('home-path');
+var homePath = require('user-home');
 var spawn = require('child-process-promise').spawn;
 var download = require('./lib/download');
 var config = require('./config');
@@ -64,7 +64,7 @@ module.exports = function (argv) {
         return console.log(err);
         
       var exe = system == 'osx' ? '/nwjs.app/Contents/MacOS/nwjs' : '/nw';
-      var nwjs = path.join(homePath(), '.nwjs/' + version + exe);
+      var nwjs = path.join(homePath, '.nwjs/' + version + exe);
       
       spawn(nwjs, nwjsArgs)
         .progress(function (childProcess) {
