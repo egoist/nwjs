@@ -28,7 +28,7 @@ nwjs
 nwjs ./app
 ```
 
-_Tested on Windows 7(32), Windows 10(32), Ubuntu 14.04(32)._
+_Tested on Windows 7(32), Windows 10(32), Ubuntu 14.04(32), OSX El Capitan (64)._
 
 ## License
 
