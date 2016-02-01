@@ -1,4 +1,4 @@
-# nwjs
+# nwjs [![version](https://img.shields.io/npm/v/nwjs.svg)](https://www.npmjs.com/package/nwjs) [![npm](https://img.shields.io/npm/dm/nwjs.svg)](https://www.npmjs.com/package/nwjs)
 
 Inspired by [electron-prebuilt](https://github.com/mafintosh/electron-prebuilt)
 
