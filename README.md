@@ -4,7 +4,7 @@ Inspired by [electron-prebuilt](https://github.com/mafintosh/electron-prebuilt)
 
 You can use `nwjs` as a nw.js version manager, and do things like `nw /your/app/path`
 
-![preview](http://ww4.sinaimg.cn/large/a15b4afegw1eun3wckiwwg20v70i4x5c.gif)
+![preview](http://ooo.0o0.ooo/2016/02/01/56af0ee357dab.gif)
 
 # Install
 
