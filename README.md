@@ -2,7 +2,7 @@
 
 Inspired by [electron-prebuilt](https://github.com/mafintosh/electron-prebuilt)
 
-You can use `nwjs` as a nw.js version manager, and do things like `nw /your/app/path`
+You can use `nwjs` as an nw.js version manager, and do things like `nw /your/app/path`
 
 ![preview](http://ooo.0o0.ooo/2016/02/01/56af0ee357dab.gif)
 
