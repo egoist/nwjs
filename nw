@@ -1,0 +1,50 @@
+#!/usr/bin/env node
+'use strict'
+
+/**
+ * Module dependencies
+ */
+const cli = require('commander')
+const update = require('update-notifier')
+const pkg = require('./package')
+require('colorful').toxic()
+
+/**
+ * Commands
+ */
+const install = require('./lib/install')
+const run = require('./lib/run')
+const use = require('./lib/use')
+const list = require('./lib/list')
+
+/**
+ * Update notify
+ */
+update({pkg}).notify()
+
+cli.version(pkg.version)
+
+cli
+  .command('*')
+  .description('Run nwjs in a directory')
+  .action(run)
+
+cli
+  .command('install <version>')
+  .description('Install an nwjs version')
+  .alias('i')
+  .action(install)
+
+cli
+  .command('use <version>')
+  .description('Set an active nwjs version')
+  .alias('u')
+  .action(use)
+
+cli
+  .command('list')
+  .description('List local cached nwjs versions')
+  .alias('ls')
+  .action(list)
+
+cli.parse(process.argv)

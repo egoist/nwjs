@@ -1,4 +1,0 @@
-#!/usr/bin/env node
-
-require('colorful').toxic();
-require('..')(process.argv.slice(2));
