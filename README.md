@@ -37,6 +37,27 @@ For all available versions to install please visit http://dl.nwjs.io/
 
 _Tested on Windows 7(32), Windows 10(32), Ubuntu 14.04(32), OSX El Capitan (64)._
 
+## Help
+
+```bash
+$ nw -h
+
+  Usage: nw [options] [command]
+
+
+  Commands:
+
+    *                    Run nwjs in a directory
+    install|i <version>  Install an nwjs version
+    use|u <version>      Set an active nwjs version
+    list|ls              List local cached nwjs versions
+
+  Options:
+
+    -h, --help     output usage information
+    -V, --version  output the version number
+```
+
 ## License
 
 MIT &copy; [EGOIST](https://github.com/egoist).
