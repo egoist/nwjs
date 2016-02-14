@@ -1,6 +1,6 @@
 const path = require('path')
-const mkdirp = require('mkdirp')
 const home = require('user-home')
+require('shelljs/global')
 
 const cacheDir = path.join(home, '.nwjs', '.cache')
-mkdirp.sync(cacheDir)
+mkdir('-p', cacheDir)
