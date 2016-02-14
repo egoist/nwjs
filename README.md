@@ -51,6 +51,7 @@ $ nw -h
     install|i <version>  Install an nwjs version
     use|u <version>      Set an active nwjs version
     list|ls              List local cached nwjs versions
+    remove|r <version>   Remove a specific version of nwjs
 
   Options:
 
