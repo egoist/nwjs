@@ -16,6 +16,7 @@ const install = require('./lib/install')
 const run = require('./lib/run')
 const use = require('./lib/use')
 const list = require('./lib/list')
+const remove = require('./lib/remove')
 
 /**
  * Update notify
@@ -46,5 +47,11 @@ cli
   .description('List local cached nwjs versions')
   .alias('ls')
   .action(list)
+
+cli
+  .command('remove <version>')
+  .description('Remove a specific version of nwjs')
+  .alias('r')
+  .action(remove)
 
 cli.parse(process.argv)

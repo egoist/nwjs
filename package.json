@@ -29,11 +29,10 @@
     "configstore": "^1.4.0",
     "extract-zip": "^1.4.1",
     "is-semver": "^1.0.0",
-    "mkdirp": "^0.5.1",
-    "mv": "^2.1.1",
     "path-exists": "^1.0.0",
     "pget": "0.0.0",
     "pify": "^2.3.0",
+    "shelljs": "^0.6.0",
     "update-notifier": "^0.6.0",
     "user-home": "^2.0.0"
   }
