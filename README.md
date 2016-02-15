@@ -33,7 +33,7 @@ $ http_proxy=http://127.0.0.1:8787 nw install 0.13.0-beta5
 $ env http_proxy=http://127.0.0.1:8787 nw install 0.13.0-beta5
 ```
 
-For all available versions to install please visit http://dl.nwjs.io/
+For all available versions to install please use `nw ls-remote`
 
 _Tested on Windows 7(32), Windows 10(32), Ubuntu 14.04(32), OSX El Capitan (64)._
 
@@ -47,11 +47,12 @@ $ nw -h
 
   Commands:
 
-    *                    Run nwjs in a directory
-    install|i <version>  Install an nwjs version
-    use|u <version>      Set an active nwjs version
-    list|ls              List local cached nwjs versions
-    remove|r <version>   Remove a specific version of nwjs
+    *                       Run nwjs in a directory
+    install|i <version>     Install an nwjs version
+    use|u <version>         Set an active nwjs version
+    list|ls                 List local cached nwjs versions
+    list-remote|ls-remote   List all available nwjs versions from remote
+    remove|r <version>      Remove a specific version of nwjs
 
   Options:
 

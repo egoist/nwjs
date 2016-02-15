@@ -16,6 +16,7 @@ const install = require('./lib/install')
 const run = require('./lib/run')
 const use = require('./lib/use')
 const list = require('./lib/list')
+const listRemote = require('./lib/list-remote')
 const remove = require('./lib/remove')
 
 /**
@@ -47,6 +48,12 @@ cli
   .description('List local cached nwjs versions')
   .alias('ls')
   .action(list)
+
+cli
+  .command('list-remote')
+  .description('List all available nwjs versions from remote')
+  .alias('ls-remote')
+  .action(listRemote)
 
 cli
   .command('remove <version>')
