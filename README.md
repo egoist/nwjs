@@ -60,6 +60,16 @@ $ nw -h
     -V, --version  output the version number
 ```
 
+## Programmatic usage
+
+```js
+const spawn = require('child_process').spawn
+// this returns the path to nwjs excutable
+const nw = require('nwjs')
+
+const child = spawn(nw)
+```
+
 ## License
 
 MIT &copy; [EGOIST](https://github.com/egoist)
