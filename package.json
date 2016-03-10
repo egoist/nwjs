@@ -1,6 +1,6 @@
 {
   "name": "nwjs",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Install nw.js prebuilts using npm",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "nw",
     "index.js",
     "postinstall.js",
-    "lib"  
+    "lib"
   ],
   "repository": {
     "type": "git",
