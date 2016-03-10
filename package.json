@@ -11,6 +11,12 @@
   "bin": {
     "nw": "nw"
   },
+  "files": [
+    "nw",
+    "index.js",
+    "postinstall.js",
+    "lib"  
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/egoist/nwjs.git"
