@@ -34,6 +34,7 @@
     "commander": "^2.9.0",
     "configstore": "^1.4.0",
     "extract-zip": "^1.4.1",
+    "figures": "^1.4.0",
     "io-spin": "^0.3.0",
     "is-semver": "^1.0.0",
     "nwjs-versions": "0.0.3",
