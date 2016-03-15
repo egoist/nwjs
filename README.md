@@ -17,11 +17,17 @@ npm i -g nwjs
 # Install a version
 $ nw install 0.12.3
 
+# Install a SDK version
+$ nw install 0.13.0-rc3-sdk
+
 # Run nw in cwd or specific any directory
 $ nw .
 
 # Use another cached version
 $ nw use 0.13.0-beta3
+
+# Use SDK version
+$ nw use 0.13.0-rc3-sdk
 
 # List all local cached versions
 $ nw ls
