@@ -28,11 +28,11 @@
   },
   "homepage": "https://github.com/egoist/nwjs#readme",
   "dependencies": {
-    "child-process-promise": "^1.1.0",
     "co": "^4.6.0",
     "colorful": "^2.1.0",
     "commander": "^2.9.0",
     "configstore": "^1.4.0",
+    "cross-spawn-async": "^2.1.9",
     "extract-zip": "^1.4.1",
     "figures": "^1.4.0",
     "io-spin": "^0.3.0",
