@@ -42,6 +42,7 @@
     "pget": "0.0.0",
     "pify": "^2.3.0",
     "shelljs": "^0.6.0",
+    "tree-kill": "^1.0.0",
     "update-notifier": "^0.6.0",
     "user-home": "^2.0.0"
   }
