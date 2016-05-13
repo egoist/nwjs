@@ -61,4 +61,8 @@ cli
   .alias('r')
   .action(remove)
 
-cli.parse(process.argv)
+const inst = cli.parse(process.argv)
+
+if(!inst.args.length) {
+  cli.outputHelp()
+}
