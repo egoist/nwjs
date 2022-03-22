@@ -1,6 +1,6 @@
 {
-  "name": "nwjs",
-  "version": "1.4.4",
+  "name": "tnwjs",
+  "version": "2.0.0",
   "description": "Install nw.js prebuilts using npm",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,8 @@
   },
   "preferGlobal": true,
   "bin": {
-    "nw": "nw"
+    "nw": "nw",
+    "tnw": "nw"
   },
   "files": [
     "nw",
