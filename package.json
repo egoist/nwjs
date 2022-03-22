@@ -1,6 +1,6 @@
 {
   "name": "tnwjs",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Install nw.js prebuilts using npm",
   "main": "index.js",
   "scripts": {
@@ -20,14 +20,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/egoist/nwjs.git"
+    "url": "git+https://github.com/ost-forks/nwjs.git"
   },
   "author": "EGOIST <0x142857@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/egoist/nwjs/issues"
+    "url": "https://github.com/ost-forks/nwjs/issues"
   },
-  "homepage": "https://github.com/egoist/nwjs#readme",
+  "homepage": "https://github.com/ost-forks/nwjs#readme",
   "dependencies": {
     "co": "^4.6.0",
     "colorful": "^2.1.0",
