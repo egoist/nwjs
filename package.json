@@ -1,6 +1,6 @@
 {
-  "name": "nwjs",
-  "version": "1.4.4",
+  "name": "tnwjs",
+  "version": "2.1.0",
   "description": "Install nw.js prebuilts using npm",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,8 @@
   },
   "preferGlobal": true,
   "bin": {
-    "nw": "nw"
+    "nw": "nw",
+    "tnw": "nw"
   },
   "files": [
     "nw",
@@ -19,14 +20,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/egoist/nwjs.git"
+    "url": "git+https://github.com/ost-forks/nwjs.git"
   },
   "author": "EGOIST <0x142857@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/egoist/nwjs/issues"
+    "url": "https://github.com/ost-forks/nwjs/issues"
   },
-  "homepage": "https://github.com/egoist/nwjs#readme",
+  "homepage": "https://github.com/ost-forks/nwjs#readme",
   "dependencies": {
     "co": "^4.6.0",
     "colorful": "^2.1.0",
@@ -40,7 +41,7 @@
     "path-exists": "^1.0.0",
     "pget": "0.0.0",
     "pify": "^2.3.0",
-    "shelljs": "^0.7.5",
+    "shelljs": "^0.8.5",
     "update-notifier": "^0.6.0",
     "user-home": "^2.0.0"
   }
