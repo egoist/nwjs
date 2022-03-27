@@ -32,6 +32,9 @@ $ tnw use 0.13.0-beta3
 # Use SDK version
 $ tnw use 0.13.0-rc3-sdk
 
+# Show the nw version currently in use
+$ tnw current
+
 # List all local cached versions
 $ tnw ls
 
