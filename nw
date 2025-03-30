@@ -18,6 +18,7 @@ const use = require('./lib/use')
 const list = require('./lib/list')
 const listRemote = require('./lib/list-remote')
 const remove = require('./lib/remove')
+const current = require('./lib/current')
 
 /**
  * Update notify
@@ -33,7 +34,7 @@ cli
 
 cli
   .command('install <version>')
-  .description('Install an nwjs version')
+  .description('Install a nwjs version')
   .alias('i')
   .action(install)
 
@@ -60,6 +61,12 @@ cli
   .description('Remove a specific version of nwjs')
   .alias('r')
   .action(remove)
+
+cli
+  .command('current')
+  .description('Show the nw version currently in use')
+  .alias('c')
+  .action(current)
 
 const inst = cli.parse(process.argv)
 
